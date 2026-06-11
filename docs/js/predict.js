@@ -13,7 +13,7 @@ const DRAFT_KEY = "wc2026.draft";
 
 // Set this to your GitHub repo to enable "Submit to leaderboard".
 // Format: "owner/repo" (e.g. "kaisersun/worldcup").
-const GITHUB_REPO = "OWNER/REPO";
+const GITHUB_REPO = "KaiserWhoLearns/llmworldcup2026";
 
 let tournament = null;
 const state = { groupOrder: {}, thirds: {}, winners: {} };
