@@ -1,0 +1,366 @@
+{
+  "id": "anthropic-opus-4-8-web",
+  "label": "Claude Opus 4.8 (web)",
+  "provider": "anthropic",
+  "model": "claude-opus-4-8",
+  "resolvedModel": "claude-opus-4-8",
+  "grounded": true,
+  "generatedAt": "2026-06-11T22:08:30.701454+00:00",
+  "prediction": {
+    "champion": "Spain",
+    "runner_up": "Argentina",
+    "third_place": "Brazil",
+    "golden_boot": "Kylian Mbappé",
+    "dark_horse": "Senegal",
+    "groups": [
+      {
+        "group": "A",
+        "standings": [
+          "Mexico",
+          "South Korea",
+          "Czechia",
+          "South Africa"
+        ]
+      },
+      {
+        "group": "B",
+        "standings": [
+          "Switzerland",
+          "Canada",
+          "Bosnia and Herzegovina",
+          "Qatar"
+        ]
+      },
+      {
+        "group": "C",
+        "standings": [
+          "Brazil",
+          "Morocco",
+          "Scotland",
+          "Haiti"
+        ]
+      },
+      {
+        "group": "D",
+        "standings": [
+          "United States",
+          "Turkey",
+          "Paraguay",
+          "Australia"
+        ]
+      },
+      {
+        "group": "E",
+        "standings": [
+          "Germany",
+          "Ecuador",
+          "Ivory Coast",
+          "Curaçao"
+        ]
+      },
+      {
+        "group": "F",
+        "standings": [
+          "Netherlands",
+          "Japan",
+          "Sweden",
+          "Tunisia"
+        ]
+      },
+      {
+        "group": "G",
+        "standings": [
+          "Belgium",
+          "Egypt",
+          "Iran",
+          "New Zealand"
+        ]
+      },
+      {
+        "group": "H",
+        "standings": [
+          "Spain",
+          "Uruguay",
+          "Cape Verde",
+          "Saudi Arabia"
+        ]
+      },
+      {
+        "group": "I",
+        "standings": [
+          "France",
+          "Senegal",
+          "Norway",
+          "Iraq"
+        ]
+      },
+      {
+        "group": "J",
+        "standings": [
+          "Argentina",
+          "Austria",
+          "Algeria",
+          "Jordan"
+        ]
+      },
+      {
+        "group": "K",
+        "standings": [
+          "Portugal",
+          "Colombia",
+          "DR Congo",
+          "Uzbekistan"
+        ]
+      },
+      {
+        "group": "L",
+        "standings": [
+          "England",
+          "Croatia",
+          "Ghana",
+          "Panama"
+        ]
+      }
+    ],
+    "best_third_qualifiers": [
+      "Norway",
+      "Ivory Coast",
+      "Scotland",
+      "Paraguay",
+      "Sweden",
+      "Iran",
+      "Algeria",
+      "Czechia"
+    ],
+    "knockout": [
+      {
+        "match": 73,
+        "round": "Round of 32",
+        "home": "South Korea",
+        "away": "Canada",
+        "winner": "South Korea"
+      },
+      {
+        "match": 74,
+        "round": "Round of 32",
+        "home": "Germany",
+        "away": "Scotland",
+        "winner": "Germany"
+      },
+      {
+        "match": 75,
+        "round": "Round of 32",
+        "home": "Netherlands",
+        "away": "Morocco",
+        "winner": "Netherlands"
+      },
+      {
+        "match": 76,
+        "round": "Round of 32",
+        "home": "Brazil",
+        "away": "Japan",
+        "winner": "Brazil"
+      },
+      {
+        "match": 77,
+        "round": "Round of 32",
+        "home": "France",
+        "away": "Paraguay",
+        "winner": "France"
+      },
+      {
+        "match": 78,
+        "round": "Round of 32",
+        "home": "Ecuador",
+        "away": "Senegal",
+        "winner": "Senegal"
+      },
+      {
+        "match": 79,
+        "round": "Round of 32",
+        "home": "Mexico",
+        "away": "Sweden",
+        "winner": "Mexico"
+      },
+      {
+        "match": 80,
+        "round": "Round of 32",
+        "home": "England",
+        "away": "Norway",
+        "winner": "England"
+      },
+      {
+        "match": 81,
+        "round": "Round of 32",
+        "home": "United States",
+        "away": "Ivory Coast",
+        "winner": "United States"
+      },
+      {
+        "match": 82,
+        "round": "Round of 32",
+        "home": "Belgium",
+        "away": "Czechia",
+        "winner": "Belgium"
+      },
+      {
+        "match": 83,
+        "round": "Round of 32",
+        "home": "Colombia",
+        "away": "Croatia",
+        "winner": "Colombia"
+      },
+      {
+        "match": 84,
+        "round": "Round of 32",
+        "home": "Spain",
+        "away": "Austria",
+        "winner": "Spain"
+      },
+      {
+        "match": 85,
+        "round": "Round of 32",
+        "home": "Switzerland",
+        "away": "Iran",
+        "winner": "Switzerland"
+      },
+      {
+        "match": 86,
+        "round": "Round of 32",
+        "home": "Argentina",
+        "away": "Uruguay",
+        "winner": "Argentina"
+      },
+      {
+        "match": 87,
+        "round": "Round of 32",
+        "home": "Portugal",
+        "away": "Algeria",
+        "winner": "Portugal"
+      },
+      {
+        "match": 88,
+        "round": "Round of 32",
+        "home": "Turkey",
+        "away": "Egypt",
+        "winner": "Turkey"
+      },
+      {
+        "match": 89,
+        "round": "Round of 16",
+        "home": "Germany",
+        "away": "France",
+        "winner": "France"
+      },
+      {
+        "match": 90,
+        "round": "Round of 16",
+        "home": "South Korea",
+        "away": "Netherlands",
+        "winner": "Netherlands"
+      },
+      {
+        "match": 91,
+        "round": "Round of 16",
+        "home": "Brazil",
+        "away": "Senegal",
+        "winner": "Brazil"
+      },
+      {
+        "match": 92,
+        "round": "Round of 16",
+        "home": "Mexico",
+        "away": "England",
+        "winner": "England"
+      },
+      {
+        "match": 93,
+        "round": "Round of 16",
+        "home": "Colombia",
+        "away": "Spain",
+        "winner": "Spain"
+      },
+      {
+        "match": 94,
+        "round": "Round of 16",
+        "home": "United States",
+        "away": "Belgium",
+        "winner": "Belgium"
+      },
+      {
+        "match": 95,
+        "round": "Round of 16",
+        "home": "Argentina",
+        "away": "Turkey",
+        "winner": "Argentina"
+      },
+      {
+        "match": 96,
+        "round": "Round of 16",
+        "home": "Switzerland",
+        "away": "Portugal",
+        "winner": "Portugal"
+      },
+      {
+        "match": 97,
+        "round": "Quarterfinal",
+        "home": "France",
+        "away": "Netherlands",
+        "winner": "France"
+      },
+      {
+        "match": 98,
+        "round": "Quarterfinal",
+        "home": "Spain",
+        "away": "Belgium",
+        "winner": "Spain"
+      },
+      {
+        "match": 99,
+        "round": "Quarterfinal",
+        "home": "Brazil",
+        "away": "England",
+        "winner": "Brazil"
+      },
+      {
+        "match": 100,
+        "round": "Quarterfinal",
+        "home": "Argentina",
+        "away": "Portugal",
+        "winner": "Argentina"
+      },
+      {
+        "match": 101,
+        "round": "Semifinal",
+        "home": "France",
+        "away": "Spain",
+        "winner": "Spain"
+      },
+      {
+        "match": 102,
+        "round": "Semifinal",
+        "home": "Brazil",
+        "away": "Argentina",
+        "winner": "Argentina"
+      },
+      {
+        "match": 103,
+        "round": "Third-place play-off",
+        "home": "France",
+        "away": "Brazil",
+        "winner": "Brazil"
+      },
+      {
+        "match": 104,
+        "round": "Final",
+        "home": "Spain",
+        "away": "Argentina",
+        "winner": "Spain"
+      }
+    ],
+    "rationale": "Spain's world-#1 ranking, Euro-winning core and Lamine Yamal carry them past France and a resurgent Argentina in the final, making them champions. Argentina edge a vintage Brazil in the other semi, with Brazil claiming third. Hosts Mexico and USA reach the knockouts on home soil, while Senegal is my dark horse, upsetting Ecuador en route to the Round of 16; Mbappé takes the Golden Boot despite France's semifinal exit."
+  },
+  "reasoning": "## Reasoning\n\n**Group stage:** I'm taking the top seeds to win their groups (Spain, Argentina, France, England, Brazil, Germany, Netherlands, Belgium, Portugal), plus hosts Mexico (A) and USA (D) riding home advantage, and Switzerland edging Canada in B. For runners-up I favor experienced sides: South Korea (Son), Canada, Morocco (2022 semifinalists), Turkey, Ecuador, Japan, Egypt (Salah), Uruguay, Senegal, Austria, Colombia, Croatia.\n\n**Best thirds:** From my twelve 3rd-place sides I advance the eight strongest — Czechia(A), Scotland(C), Paraguay(D), Ivory Coast(E), Sweden(F), Iran(G), Norway(I), Algeria(J) — and slot them into the eight third-place berths respecting each match's group constraints (each used once).\n\n**Knockouts:** The heavyweight quadrants push France, Spain, Brazil and Argentina to the semis. I have Spain (world #1, deep golden generation with Yamal) beating France, and Argentina beating Brazil in a classic. **Final: Spain over Argentina**, with Brazil taking third. Mbappé still tops the scoring charts despite France's semifinal exit.",
+  "warnings": [],
+  "error": null
+}

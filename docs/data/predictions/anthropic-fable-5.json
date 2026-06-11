@@ -1,0 +1,366 @@
+{
+  "id": "anthropic-fable-5",
+  "label": "Claude Fable 5",
+  "provider": "anthropic",
+  "model": "claude-fable-5",
+  "resolvedModel": "claude-fable-5",
+  "grounded": false,
+  "generatedAt": "2026-06-11T22:06:17.091726+00:00",
+  "prediction": {
+    "champion": "Spain",
+    "runner_up": "Argentina",
+    "third_place": "France",
+    "golden_boot": "Kylian Mbappé",
+    "dark_horse": "Morocco",
+    "groups": [
+      {
+        "group": "A",
+        "standings": [
+          "Mexico",
+          "South Korea",
+          "Czechia",
+          "South Africa"
+        ]
+      },
+      {
+        "group": "B",
+        "standings": [
+          "Switzerland",
+          "Canada",
+          "Bosnia and Herzegovina",
+          "Qatar"
+        ]
+      },
+      {
+        "group": "C",
+        "standings": [
+          "Brazil",
+          "Morocco",
+          "Scotland",
+          "Haiti"
+        ]
+      },
+      {
+        "group": "D",
+        "standings": [
+          "United States",
+          "Turkey",
+          "Paraguay",
+          "Australia"
+        ]
+      },
+      {
+        "group": "E",
+        "standings": [
+          "Germany",
+          "Ecuador",
+          "Ivory Coast",
+          "Curaçao"
+        ]
+      },
+      {
+        "group": "F",
+        "standings": [
+          "Netherlands",
+          "Japan",
+          "Sweden",
+          "Tunisia"
+        ]
+      },
+      {
+        "group": "G",
+        "standings": [
+          "Belgium",
+          "Egypt",
+          "Iran",
+          "New Zealand"
+        ]
+      },
+      {
+        "group": "H",
+        "standings": [
+          "Spain",
+          "Uruguay",
+          "Saudi Arabia",
+          "Cape Verde"
+        ]
+      },
+      {
+        "group": "I",
+        "standings": [
+          "France",
+          "Norway",
+          "Senegal",
+          "Iraq"
+        ]
+      },
+      {
+        "group": "J",
+        "standings": [
+          "Argentina",
+          "Austria",
+          "Algeria",
+          "Jordan"
+        ]
+      },
+      {
+        "group": "K",
+        "standings": [
+          "Portugal",
+          "Colombia",
+          "Uzbekistan",
+          "DR Congo"
+        ]
+      },
+      {
+        "group": "L",
+        "standings": [
+          "England",
+          "Croatia",
+          "Ghana",
+          "Panama"
+        ]
+      }
+    ],
+    "best_third_qualifiers": [
+      "Czechia",
+      "Scotland",
+      "Paraguay",
+      "Ivory Coast",
+      "Iran",
+      "Senegal",
+      "Algeria",
+      "Ghana"
+    ],
+    "knockout": [
+      {
+        "match": 73,
+        "round": "Round of 32",
+        "home": "South Korea",
+        "away": "Canada",
+        "winner": "Canada"
+      },
+      {
+        "match": 74,
+        "round": "Round of 32",
+        "home": "Germany",
+        "away": "Czechia",
+        "winner": "Germany"
+      },
+      {
+        "match": 75,
+        "round": "Round of 32",
+        "home": "Netherlands",
+        "away": "Morocco",
+        "winner": "Morocco"
+      },
+      {
+        "match": 76,
+        "round": "Round of 32",
+        "home": "Brazil",
+        "away": "Japan",
+        "winner": "Brazil"
+      },
+      {
+        "match": 77,
+        "round": "Round of 32",
+        "home": "France",
+        "away": "Paraguay",
+        "winner": "France"
+      },
+      {
+        "match": 78,
+        "round": "Round of 32",
+        "home": "Ecuador",
+        "away": "Norway",
+        "winner": "Norway"
+      },
+      {
+        "match": 79,
+        "round": "Round of 32",
+        "home": "Mexico",
+        "away": "Scotland",
+        "winner": "Mexico"
+      },
+      {
+        "match": 80,
+        "round": "Round of 32",
+        "home": "England",
+        "away": "Algeria",
+        "winner": "England"
+      },
+      {
+        "match": 81,
+        "round": "Round of 32",
+        "home": "United States",
+        "away": "Senegal",
+        "winner": "United States"
+      },
+      {
+        "match": 82,
+        "round": "Round of 32",
+        "home": "Belgium",
+        "away": "Ivory Coast",
+        "winner": "Belgium"
+      },
+      {
+        "match": 83,
+        "round": "Round of 32",
+        "home": "Colombia",
+        "away": "Croatia",
+        "winner": "Colombia"
+      },
+      {
+        "match": 84,
+        "round": "Round of 32",
+        "home": "Spain",
+        "away": "Austria",
+        "winner": "Spain"
+      },
+      {
+        "match": 85,
+        "round": "Round of 32",
+        "home": "Switzerland",
+        "away": "Iran",
+        "winner": "Switzerland"
+      },
+      {
+        "match": 86,
+        "round": "Round of 32",
+        "home": "Argentina",
+        "away": "Uruguay",
+        "winner": "Argentina"
+      },
+      {
+        "match": 87,
+        "round": "Round of 32",
+        "home": "Portugal",
+        "away": "Ghana",
+        "winner": "Portugal"
+      },
+      {
+        "match": 88,
+        "round": "Round of 32",
+        "home": "Turkey",
+        "away": "Egypt",
+        "winner": "Turkey"
+      },
+      {
+        "match": 89,
+        "round": "Round of 16",
+        "home": "Germany",
+        "away": "France",
+        "winner": "France"
+      },
+      {
+        "match": 90,
+        "round": "Round of 16",
+        "home": "Canada",
+        "away": "Morocco",
+        "winner": "Morocco"
+      },
+      {
+        "match": 91,
+        "round": "Round of 16",
+        "home": "Brazil",
+        "away": "Norway",
+        "winner": "Brazil"
+      },
+      {
+        "match": 92,
+        "round": "Round of 16",
+        "home": "Mexico",
+        "away": "England",
+        "winner": "England"
+      },
+      {
+        "match": 93,
+        "round": "Round of 16",
+        "home": "Colombia",
+        "away": "Spain",
+        "winner": "Spain"
+      },
+      {
+        "match": 94,
+        "round": "Round of 16",
+        "home": "United States",
+        "away": "Belgium",
+        "winner": "United States"
+      },
+      {
+        "match": 95,
+        "round": "Round of 16",
+        "home": "Argentina",
+        "away": "Turkey",
+        "winner": "Argentina"
+      },
+      {
+        "match": 96,
+        "round": "Round of 16",
+        "home": "Switzerland",
+        "away": "Portugal",
+        "winner": "Portugal"
+      },
+      {
+        "match": 97,
+        "round": "Quarterfinal",
+        "home": "France",
+        "away": "Morocco",
+        "winner": "France"
+      },
+      {
+        "match": 98,
+        "round": "Quarterfinal",
+        "home": "Spain",
+        "away": "United States",
+        "winner": "Spain"
+      },
+      {
+        "match": 99,
+        "round": "Quarterfinal",
+        "home": "Brazil",
+        "away": "England",
+        "winner": "England"
+      },
+      {
+        "match": 100,
+        "round": "Quarterfinal",
+        "home": "Argentina",
+        "away": "Portugal",
+        "winner": "Argentina"
+      },
+      {
+        "match": 101,
+        "round": "Semifinal",
+        "home": "France",
+        "away": "Spain",
+        "winner": "Spain"
+      },
+      {
+        "match": 102,
+        "round": "Semifinal",
+        "home": "England",
+        "away": "Argentina",
+        "winner": "Argentina"
+      },
+      {
+        "match": 103,
+        "round": "Third-place play-off",
+        "home": "France",
+        "away": "England",
+        "winner": "France"
+      },
+      {
+        "match": 104,
+        "round": "Final",
+        "home": "Spain",
+        "away": "Argentina",
+        "winner": "Spain"
+      }
+    ],
+    "rationale": "Spain's generational depth and midfield control carry them past France and then Argentina in a dream New Jersey final, denying Messi's farewell. Morocco are the dark horse again, eliminating the Netherlands and hosts Canada to reach a second straight quarterfinal, while the USA ride home support to the last eight. Mbappé's seven-game run including the third-place match earns him the Golden Boot."
+  },
+  "reasoning": "## Reasoning\n\n**Groups:** Mexico tops A with home support; South Korea edge Czechia for 2nd. Switzerland win B over host Canada. Brazil and Morocco are clearly the class of C. USA top D at home with Turkey's golden generation 2nd. Germany and Ecuador go through in E. Netherlands–Japan in F (Sweden's stars don't save a flawed team). Belgium–Egypt in G. Spain cruise in H with Uruguay 2nd. France top I; I back Haaland's Norway over Senegal for 2nd. Argentina and Austria (Rangnick's structure) in J. Portugal and Colombia in K. England and Croatia in L.\n\n**Best thirds:** Czechia, Scotland, Paraguay, Ivory Coast, Iran, Senegal, Algeria, Ghana — slotted consistently into the bracket template (Bosnia, Sweden, Saudi Arabia, Uzbekistan miss out).\n\n**Knockouts:** Headline calls: Morocco shock Netherlands in the R32 and beat hosts Canada to reach the QF (my dark horse). USA ride home momentum past Senegal and Belgium before falling to Spain. France beat Germany in a blockbuster R16. England finally get past Brazil in a QF, but Argentina (Messi's last dance) beat them in the semi. Spain edge France in the other semi and beat Argentina in the New Jersey final — the reigning European champions' depth, midfield control, and Yamal's brilliance prevail. Mbappé takes the Golden Boot with a deep run and penalty duty; France win the third-place match.",
+  "warnings": [],
+  "error": null
+}

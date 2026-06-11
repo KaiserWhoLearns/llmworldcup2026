@@ -1,0 +1,366 @@
+{
+  "id": "google-gemini-flash-web",
+  "label": "Gemini 2.5 Flash (web)",
+  "provider": "google",
+  "model": "gemini-2.5-flash",
+  "resolvedModel": "gemini-2.5-flash",
+  "grounded": true,
+  "generatedAt": "2026-06-11T22:35:42.414888+00:00",
+  "prediction": {
+    "champion": "France",
+    "runner_up": "Argentina",
+    "third_place": "Brazil",
+    "golden_boot": "Kylian Mbappé",
+    "dark_horse": "Colombia",
+    "groups": [
+      {
+        "group": "A",
+        "standings": [
+          "Mexico",
+          "Czechia",
+          "South Korea",
+          "South Africa"
+        ]
+      },
+      {
+        "group": "B",
+        "standings": [
+          "Switzerland",
+          "Canada",
+          "Bosnia and Herzegovina",
+          "Qatar"
+        ]
+      },
+      {
+        "group": "C",
+        "standings": [
+          "Brazil",
+          "Morocco",
+          "Scotland",
+          "Haiti"
+        ]
+      },
+      {
+        "group": "D",
+        "standings": [
+          "United States",
+          "Turkey",
+          "Paraguay",
+          "Australia"
+        ]
+      },
+      {
+        "group": "E",
+        "standings": [
+          "Germany",
+          "Ivory Coast",
+          "Ecuador",
+          "Curaçao"
+        ]
+      },
+      {
+        "group": "F",
+        "standings": [
+          "Netherlands",
+          "Japan",
+          "Sweden",
+          "Tunisia"
+        ]
+      },
+      {
+        "group": "G",
+        "standings": [
+          "Belgium",
+          "Egypt",
+          "Iran",
+          "New Zealand"
+        ]
+      },
+      {
+        "group": "H",
+        "standings": [
+          "Spain",
+          "Uruguay",
+          "Cape Verde",
+          "Saudi Arabia"
+        ]
+      },
+      {
+        "group": "I",
+        "standings": [
+          "France",
+          "Senegal",
+          "Norway",
+          "Iraq"
+        ]
+      },
+      {
+        "group": "J",
+        "standings": [
+          "Argentina",
+          "Austria",
+          "Algeria",
+          "Jordan"
+        ]
+      },
+      {
+        "group": "K",
+        "standings": [
+          "Portugal",
+          "Colombia",
+          "DR Congo",
+          "Uzbekistan"
+        ]
+      },
+      {
+        "group": "L",
+        "standings": [
+          "England",
+          "Croatia",
+          "Ghana",
+          "Panama"
+        ]
+      }
+    ],
+    "best_third_qualifiers": [
+      "Sweden",
+      "Norway",
+      "Scotland",
+      "Ecuador",
+      "South Korea",
+      "Ghana",
+      "Algeria",
+      "Bosnia and Herzegovina"
+    ],
+    "knockout": [
+      {
+        "match": 73,
+        "round": "Round of 32",
+        "home": "Czechia",
+        "away": "Canada",
+        "winner": "Czechia"
+      },
+      {
+        "match": 74,
+        "round": "Round of 32",
+        "home": "Germany",
+        "away": "South Korea",
+        "winner": "Germany"
+      },
+      {
+        "match": 75,
+        "round": "Round of 32",
+        "home": "Netherlands",
+        "away": "Morocco",
+        "winner": "Netherlands"
+      },
+      {
+        "match": 76,
+        "round": "Round of 32",
+        "home": "Brazil",
+        "away": "Japan",
+        "winner": "Brazil"
+      },
+      {
+        "match": 77,
+        "round": "Round of 32",
+        "home": "France",
+        "away": "Scotland",
+        "winner": "France"
+      },
+      {
+        "match": 78,
+        "round": "Round of 32",
+        "home": "Ivory Coast",
+        "away": "Senegal",
+        "winner": "Senegal"
+      },
+      {
+        "match": 79,
+        "round": "Round of 32",
+        "home": "Mexico",
+        "away": "Ecuador",
+        "winner": "Mexico"
+      },
+      {
+        "match": 80,
+        "round": "Round of 32",
+        "home": "England",
+        "away": "Algeria",
+        "winner": "England"
+      },
+      {
+        "match": 81,
+        "round": "Round of 32",
+        "home": "United States",
+        "away": "Bosnia and Herzegovina",
+        "winner": "United States"
+      },
+      {
+        "match": 82,
+        "round": "Round of 32",
+        "home": "Belgium",
+        "away": "Norway",
+        "winner": "Belgium"
+      },
+      {
+        "match": 83,
+        "round": "Round of 32",
+        "home": "Colombia",
+        "away": "Croatia",
+        "winner": "Colombia"
+      },
+      {
+        "match": 84,
+        "round": "Round of 32",
+        "home": "Spain",
+        "away": "Austria",
+        "winner": "Spain"
+      },
+      {
+        "match": 85,
+        "round": "Round of 32",
+        "home": "Switzerland",
+        "away": "Sweden",
+        "winner": "Switzerland"
+      },
+      {
+        "match": 86,
+        "round": "Round of 32",
+        "home": "Argentina",
+        "away": "Uruguay",
+        "winner": "Argentina"
+      },
+      {
+        "match": 87,
+        "round": "Round of 32",
+        "home": "Portugal",
+        "away": "Ghana",
+        "winner": "Portugal"
+      },
+      {
+        "match": 88,
+        "round": "Round of 32",
+        "home": "Turkey",
+        "away": "Egypt",
+        "winner": "Turkey"
+      },
+      {
+        "match": 89,
+        "round": "Round of 16",
+        "home": "Germany",
+        "away": "France",
+        "winner": "France"
+      },
+      {
+        "match": 90,
+        "round": "Round of 16",
+        "home": "Czechia",
+        "away": "Netherlands",
+        "winner": "Netherlands"
+      },
+      {
+        "match": 91,
+        "round": "Round of 16",
+        "home": "Brazil",
+        "away": "Senegal",
+        "winner": "Brazil"
+      },
+      {
+        "match": 92,
+        "round": "Round of 16",
+        "home": "Mexico",
+        "away": "England",
+        "winner": "England"
+      },
+      {
+        "match": 93,
+        "round": "Round of 16",
+        "home": "Colombia",
+        "away": "Spain",
+        "winner": "Spain"
+      },
+      {
+        "match": 94,
+        "round": "Round of 16",
+        "home": "United States",
+        "away": "Belgium",
+        "winner": "Belgium"
+      },
+      {
+        "match": 95,
+        "round": "Round of 16",
+        "home": "Argentina",
+        "away": "Turkey",
+        "winner": "Argentina"
+      },
+      {
+        "match": 96,
+        "round": "Round of 16",
+        "home": "Switzerland",
+        "away": "Portugal",
+        "winner": "Portugal"
+      },
+      {
+        "match": 97,
+        "round": "Quarterfinals",
+        "home": "France",
+        "away": "Netherlands",
+        "winner": "France"
+      },
+      {
+        "match": 98,
+        "round": "Quarterfinals",
+        "home": "Spain",
+        "away": "Belgium",
+        "winner": "Spain"
+      },
+      {
+        "match": 99,
+        "round": "Quarterfinals",
+        "home": "Brazil",
+        "away": "England",
+        "winner": "Brazil"
+      },
+      {
+        "match": 100,
+        "round": "Quarterfinals",
+        "home": "Argentina",
+        "away": "Portugal",
+        "winner": "Argentina"
+      },
+      {
+        "match": 101,
+        "round": "Semifinals",
+        "home": "France",
+        "away": "Spain",
+        "winner": "France"
+      },
+      {
+        "match": 102,
+        "round": "Semifinals",
+        "home": "Brazil",
+        "away": "Argentina",
+        "winner": "Argentina"
+      },
+      {
+        "match": 103,
+        "round": "Third-Place Play-Off",
+        "home": "Spain",
+        "away": "Brazil",
+        "winner": "Brazil"
+      },
+      {
+        "match": 104,
+        "round": "Final",
+        "home": "France",
+        "away": "Argentina",
+        "winner": "France"
+      }
+    ],
+    "rationale": "France and Argentina, the 2022 finalists, meet again in 2026, with France ultimately triumphing due to their generational talent and squad depth. Brazil reclaims third place in a thrilling South American rivalry with Spain. Colombia emerges as a dark horse, reaching the Round of 16."
+  },
+  "reasoning": "Here is my complete prediction for the 2026 FIFA World Cup, reasoning through the group stages and the subsequent knockout rounds.\n\n**Reasoning:**\n\nThe 2026 World Cup, expanded to 48 teams, will introduce more upsets in the group stage due to the additional third-placed qualifiers, but the traditional powerhouses are still expected to dominate the later stages. Host nations (Mexico, Canada, USA) will benefit from home advantage, pushing them further than their historical form might suggest. Top seeds like France, Argentina, England, and Spain possess deep, talented squads that are likely to navigate the group stage with relative ease. Brazil and Germany, always strong contenders, are also poised for deep runs.\n\nFor the knockout phase, I foresee a challenging path for many, leading to several high-profile clashes early on. The increased number of teams means potentially more unpredictable match-ups in the Round of 32. However, the top-tier teams' quality is expected to shine through as the tournament progresses. I anticipate a rematch of the 2022 Final, with France seeking revenge against Argentina. Kylian Mbappé's continued brilliance and France's overall squad depth could prove decisive. Colombia is my dark horse pick; they have a strong, dynamic squad capable of upsetting higher-ranked teams and could make a surprise run deep into the tournament.\n\n**Detailed Predictions:**",
+  "warnings": [],
+  "error": null
+}

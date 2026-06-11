@@ -1,0 +1,92 @@
+{
+  "name": "2026 FIFA World Cup",
+  "hosts": ["United States", "Canada", "Mexico"],
+  "format": "48 teams in 12 groups of 4. Top 2 of each group plus the 8 best third-placed teams advance to a Round of 32, then single-elimination through the Final.",
+  "openingMatch": {
+    "home": "Mexico",
+    "away": "South Africa",
+    "date": "2026-06-11",
+    "venue": "Estadio Azteca, Mexico City"
+  },
+  "finalMatch": {
+    "date": "2026-07-19",
+    "venue": "MetLife Stadium, New York/New Jersey"
+  },
+  "schedule": {
+    "groupStage": "June 11 – 27",
+    "roundOf32": "June 28 – July 3",
+    "roundOf16": "July 4 – 7",
+    "quarterfinals": "July 9 – 11",
+    "semifinals": "July 14 – 15",
+    "thirdPlace": "July 18",
+    "final": "July 19"
+  },
+  "topSeeds": {
+    "1": "Spain",
+    "2": "Argentina",
+    "3": "France",
+    "4": "England"
+  },
+  "pots": {
+    "1": ["United States", "Mexico", "Canada", "Spain", "Argentina", "France", "England", "Brazil", "Portugal", "Netherlands", "Belgium", "Germany"],
+    "2": ["Croatia", "Morocco", "Colombia", "Uruguay", "Switzerland", "Japan", "Senegal", "Iran", "South Korea", "Ecuador", "Austria", "Australia"],
+    "3": ["Norway", "Panama", "Egypt", "Algeria", "Scotland", "Paraguay", "Tunisia", "Ivory Coast", "Uzbekistan", "Qatar", "Saudi Arabia", "South Africa"],
+    "4": ["Jordan", "Cape Verde", "Ghana", "Curaçao", "Haiti", "New Zealand", "DR Congo", "Bosnia and Herzegovina", "Sweden", "Czechia", "Iraq", "Panama"]
+  },
+  "groups": {
+    "A": ["Mexico", "South Africa", "South Korea", "Czechia"],
+    "B": ["Canada", "Bosnia and Herzegovina", "Qatar", "Switzerland"],
+    "C": ["Brazil", "Morocco", "Haiti", "Scotland"],
+    "D": ["United States", "Paraguay", "Australia", "Turkey"],
+    "E": ["Germany", "Curaçao", "Ivory Coast", "Ecuador"],
+    "F": ["Netherlands", "Japan", "Sweden", "Tunisia"],
+    "G": ["Belgium", "Egypt", "Iran", "New Zealand"],
+    "H": ["Spain", "Cape Verde", "Saudi Arabia", "Uruguay"],
+    "I": ["France", "Senegal", "Iraq", "Norway"],
+    "J": ["Argentina", "Algeria", "Austria", "Jordan"],
+    "K": ["Portugal", "DR Congo", "Uzbekistan", "Colombia"],
+    "L": ["England", "Croatia", "Ghana", "Panama"]
+  },
+  "knockout": {
+    "roundOf32": [
+      {"match": 73, "home": "RU_A", "away": "RU_B"},
+      {"match": 74, "home": "W_E", "away": "3RD_A/B/C/D/F"},
+      {"match": 75, "home": "W_F", "away": "RU_C"},
+      {"match": 76, "home": "W_C", "away": "RU_F"},
+      {"match": 77, "home": "W_I", "away": "3RD_C/D/F/G/H"},
+      {"match": 78, "home": "RU_E", "away": "RU_I"},
+      {"match": 79, "home": "W_A", "away": "3RD_C/E/F/H/I"},
+      {"match": 80, "home": "W_L", "away": "3RD_E/H/I/J/K"},
+      {"match": 81, "home": "W_D", "away": "3RD_B/E/F/I/J"},
+      {"match": 82, "home": "W_G", "away": "3RD_A/E/H/I/J"},
+      {"match": 83, "home": "RU_K", "away": "RU_L"},
+      {"match": 84, "home": "W_H", "away": "RU_J"},
+      {"match": 85, "home": "W_B", "away": "3RD_E/F/G/I/J"},
+      {"match": 86, "home": "W_J", "away": "RU_H"},
+      {"match": 87, "home": "W_K", "away": "3RD_D/E/I/J/L"},
+      {"match": 88, "home": "RU_D", "away": "RU_G"}
+    ],
+    "roundOf16": [
+      {"match": 89, "home": "W74", "away": "W77"},
+      {"match": 90, "home": "W73", "away": "W75"},
+      {"match": 91, "home": "W76", "away": "W78"},
+      {"match": 92, "home": "W79", "away": "W80"},
+      {"match": 93, "home": "W83", "away": "W84"},
+      {"match": 94, "home": "W81", "away": "W82"},
+      {"match": 95, "home": "W86", "away": "W88"},
+      {"match": 96, "home": "W85", "away": "W87"}
+    ],
+    "quarterfinals": [
+      {"match": 97, "home": "W89", "away": "W90"},
+      {"match": 98, "home": "W93", "away": "W94"},
+      {"match": 99, "home": "W91", "away": "W92"},
+      {"match": 100, "home": "W95", "away": "W96"}
+    ],
+    "semifinals": [
+      {"match": 101, "home": "W97", "away": "W98"},
+      {"match": 102, "home": "W99", "away": "W100"}
+    ],
+    "thirdPlace": {"match": 103, "home": "L101", "away": "L102"},
+    "final": {"match": 104, "home": "W101", "away": "W102"}
+  }
+}

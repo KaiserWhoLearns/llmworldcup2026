@@ -1,0 +1,366 @@
+{
+  "id": "openai-gpt-mini-web",
+  "label": "GPT-5.4 mini (web)",
+  "provider": "openai",
+  "model": "gpt-5.4-mini",
+  "resolvedModel": "gpt-5.4-mini-2026-03-17",
+  "grounded": true,
+  "generatedAt": "2026-06-11T22:09:53.733175+00:00",
+  "prediction": {
+    "champion": "Spain",
+    "runner_up": "France",
+    "third_place": "Argentina",
+    "golden_boot": "Harry Kane",
+    "dark_horse": "Morocco",
+    "groups": [
+      {
+        "group": "A",
+        "standings": [
+          "Mexico",
+          "South Korea",
+          "South Africa",
+          "Czechia"
+        ]
+      },
+      {
+        "group": "B",
+        "standings": [
+          "Switzerland",
+          "Canada",
+          "Qatar",
+          "Bosnia and Herzegovina"
+        ]
+      },
+      {
+        "group": "C",
+        "standings": [
+          "Brazil",
+          "Scotland",
+          "Morocco",
+          "Haiti"
+        ]
+      },
+      {
+        "group": "D",
+        "standings": [
+          "United States",
+          "Turkey",
+          "Australia",
+          "Paraguay"
+        ]
+      },
+      {
+        "group": "E",
+        "standings": [
+          "Germany",
+          "Ecuador",
+          "Ivory Coast",
+          "Curaçao"
+        ]
+      },
+      {
+        "group": "F",
+        "standings": [
+          "Netherlands",
+          "Japan",
+          "Sweden",
+          "Tunisia"
+        ]
+      },
+      {
+        "group": "G",
+        "standings": [
+          "Belgium",
+          "Egypt",
+          "Iran",
+          "New Zealand"
+        ]
+      },
+      {
+        "group": "H",
+        "standings": [
+          "Spain",
+          "Uruguay",
+          "Saudi Arabia",
+          "Cape Verde"
+        ]
+      },
+      {
+        "group": "I",
+        "standings": [
+          "France",
+          "Senegal",
+          "Norway",
+          "Iraq"
+        ]
+      },
+      {
+        "group": "J",
+        "standings": [
+          "Argentina",
+          "Austria",
+          "Algeria",
+          "Jordan"
+        ]
+      },
+      {
+        "group": "K",
+        "standings": [
+          "Portugal",
+          "Colombia",
+          "Uzbekistan",
+          "DR Congo"
+        ]
+      },
+      {
+        "group": "L",
+        "standings": [
+          "England",
+          "Croatia",
+          "Ghana",
+          "Panama"
+        ]
+      }
+    ],
+    "best_third_qualifiers": [
+      "South Africa",
+      "Morocco",
+      "Australia",
+      "Ivory Coast",
+      "Sweden",
+      "Iran",
+      "Algeria",
+      "Ghana"
+    ],
+    "knockout": [
+      {
+        "match": 73,
+        "round": "Round of 32",
+        "home": "South Korea",
+        "away": "Canada",
+        "winner": "South Korea"
+      },
+      {
+        "match": 74,
+        "round": "Round of 32",
+        "home": "Germany",
+        "away": "South Africa",
+        "winner": "Germany"
+      },
+      {
+        "match": 75,
+        "round": "Round of 32",
+        "home": "Netherlands",
+        "away": "Brazil",
+        "winner": "Netherlands"
+      },
+      {
+        "match": 76,
+        "round": "Round of 32",
+        "home": "Brazil",
+        "away": "Japan",
+        "winner": "Brazil"
+      },
+      {
+        "match": 77,
+        "round": "Round of 32",
+        "home": "France",
+        "away": "Morocco",
+        "winner": "France"
+      },
+      {
+        "match": 78,
+        "round": "Round of 32",
+        "home": "Ivory Coast",
+        "away": "Senegal",
+        "winner": "Senegal"
+      },
+      {
+        "match": 79,
+        "round": "Round of 32",
+        "home": "Mexico",
+        "away": "Sweden",
+        "winner": "Mexico"
+      },
+      {
+        "match": 80,
+        "round": "Round of 32",
+        "home": "England",
+        "away": "Ghana",
+        "winner": "England"
+      },
+      {
+        "match": 81,
+        "round": "Round of 32",
+        "home": "United States",
+        "away": "Iran",
+        "winner": "United States"
+      },
+      {
+        "match": 82,
+        "round": "Round of 32",
+        "home": "Belgium",
+        "away": "Algeria",
+        "winner": "Belgium"
+      },
+      {
+        "match": 83,
+        "round": "Round of 32",
+        "home": "Colombia",
+        "away": "Croatia",
+        "winner": "Colombia"
+      },
+      {
+        "match": 84,
+        "round": "Round of 32",
+        "home": "Spain",
+        "away": "Austria",
+        "winner": "Spain"
+      },
+      {
+        "match": 85,
+        "round": "Round of 32",
+        "home": "Switzerland",
+        "away": "Australia",
+        "winner": "Switzerland"
+      },
+      {
+        "match": 86,
+        "round": "Round of 32",
+        "home": "Argentina",
+        "away": "Uruguay",
+        "winner": "Argentina"
+      },
+      {
+        "match": 87,
+        "round": "Round of 32",
+        "home": "Portugal",
+        "away": "Czechia",
+        "winner": "Portugal"
+      },
+      {
+        "match": 88,
+        "round": "Round of 32",
+        "home": "Turkey",
+        "away": "Egypt",
+        "winner": "Turkey"
+      },
+      {
+        "match": 89,
+        "round": "Round of 16",
+        "home": "Germany",
+        "away": "France",
+        "winner": "France"
+      },
+      {
+        "match": 90,
+        "round": "Round of 16",
+        "home": "South Korea",
+        "away": "Netherlands",
+        "winner": "Netherlands"
+      },
+      {
+        "match": 91,
+        "round": "Round of 16",
+        "home": "Brazil",
+        "away": "Senegal",
+        "winner": "Brazil"
+      },
+      {
+        "match": 92,
+        "round": "Round of 16",
+        "home": "Mexico",
+        "away": "England",
+        "winner": "England"
+      },
+      {
+        "match": 93,
+        "round": "Round of 16",
+        "home": "Colombia",
+        "away": "Spain",
+        "winner": "Spain"
+      },
+      {
+        "match": 94,
+        "round": "Round of 16",
+        "home": "United States",
+        "away": "Belgium",
+        "winner": "United States"
+      },
+      {
+        "match": 95,
+        "round": "Round of 16",
+        "home": "Argentina",
+        "away": "Turkey",
+        "winner": "Argentina"
+      },
+      {
+        "match": 96,
+        "round": "Round of 16",
+        "home": "Switzerland",
+        "away": "Portugal",
+        "winner": "Portugal"
+      },
+      {
+        "match": 97,
+        "round": "Quarterfinals",
+        "home": "France",
+        "away": "Netherlands",
+        "winner": "France"
+      },
+      {
+        "match": 98,
+        "round": "Quarterfinals",
+        "home": "Spain",
+        "away": "United States",
+        "winner": "Spain"
+      },
+      {
+        "match": 99,
+        "round": "Quarterfinals",
+        "home": "Brazil",
+        "away": "England",
+        "winner": "England"
+      },
+      {
+        "match": 100,
+        "round": "Quarterfinals",
+        "home": "Argentina",
+        "away": "Portugal",
+        "winner": "Argentina"
+      },
+      {
+        "match": 101,
+        "round": "Semifinals",
+        "home": "France",
+        "away": "Spain",
+        "winner": "Spain"
+      },
+      {
+        "match": 102,
+        "round": "Semifinals",
+        "home": "England",
+        "away": "Argentina",
+        "winner": "England"
+      },
+      {
+        "match": 103,
+        "round": "Third-place Play-off",
+        "home": "France",
+        "away": "Argentina",
+        "winner": "Argentina"
+      },
+      {
+        "match": 104,
+        "round": "Final",
+        "home": "Spain",
+        "away": "England",
+        "winner": "Spain"
+      }
+    ],
+    "rationale": "Spain’s control game, depth, and path through the bracket make them the safest title pick. France and England are the two biggest threats, but Spain edge France in the semifinal and then handle England in a tight final. Morocco is my dark horse because they combine structure, athleticism, and knockout resilience well enough to punch above seed."
+  },
+  "reasoning": "Here’s the compact reasoning behind my bracket:\n\nI’m leaning toward the deepest, most tournament-tested cores: Spain, France, Argentina, and England all make clean runs, but Spain get the friendlier path and the most reliable control in tight knockout games. Brazil and Portugal are the main non-top-seed threats on their sides of the draw, while the host nations do well in groups but mostly run into stronger opposition once the bracket tightens. For dark-horse value, I like Morocco to again outperform expectation, and I’m backing them as one of the better third-place/knockout overachievers if the draw breaks right.\n\nFor the title game, I’m calling Spain over France: Spain’s midfield control and game-management give them the edge in a final that should be decided by margins. I’m also picking Harry Kane as golden boot because England should create enough volume in the group stage and into the round of 32/16 for him to pile up goals.",
+  "warnings": [],
+  "error": null
+}

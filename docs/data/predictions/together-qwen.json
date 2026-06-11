@@ -1,0 +1,368 @@
+{
+  "id": "together-qwen",
+  "label": "Qwen3-235B-A22B-Instruct",
+  "provider": "together",
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507-tput",
+  "resolvedModel": "Qwen/Qwen3-235B-A22B-Instruct-2507-tput",
+  "grounded": false,
+  "generatedAt": "2026-06-11T21:25:21.699008+00:00",
+  "prediction": {
+    "champion": "Spain",
+    "runner_up": "Argentina",
+    "third_place": "France",
+    "golden_boot": "Lionel Messi",
+    "dark_horse": "Curaçao",
+    "groups": [
+      {
+        "group": "A",
+        "standings": [
+          "Mexico",
+          "South Korea",
+          "Czechia",
+          "South Africa"
+        ]
+      },
+      {
+        "group": "B",
+        "standings": [
+          "Switzerland",
+          "Canada",
+          "Bosnia and Herzegovina",
+          "Qatar"
+        ]
+      },
+      {
+        "group": "C",
+        "standings": [
+          "Brazil",
+          "Morocco",
+          "Scotland",
+          "Haiti"
+        ]
+      },
+      {
+        "group": "D",
+        "standings": [
+          "United States",
+          "Paraguay",
+          "Australia",
+          "Turkey"
+        ]
+      },
+      {
+        "group": "E",
+        "standings": [
+          "Germany",
+          "Ecuador",
+          "Curaçao",
+          "Ivory Coast"
+        ]
+      },
+      {
+        "group": "F",
+        "standings": [
+          "Netherlands",
+          "Japan",
+          "Sweden",
+          "Tunisia"
+        ]
+      },
+      {
+        "group": "G",
+        "standings": [
+          "Belgium",
+          "Egypt",
+          "Iran",
+          "New Zealand"
+        ]
+      },
+      {
+        "group": "H",
+        "standings": [
+          "Spain",
+          "Uruguay",
+          "Cape Verde",
+          "Saudi Arabia"
+        ]
+      },
+      {
+        "group": "I",
+        "standings": [
+          "France",
+          "Senegal",
+          "Iraq",
+          "Norway"
+        ]
+      },
+      {
+        "group": "J",
+        "standings": [
+          "Argentina",
+          "Austria",
+          "Algeria",
+          "Jordan"
+        ]
+      },
+      {
+        "group": "K",
+        "standings": [
+          "Portugal",
+          "Colombia",
+          "DR Congo",
+          "Uzbekistan"
+        ]
+      },
+      {
+        "group": "L",
+        "standings": [
+          "England",
+          "Croatia",
+          "Ghana",
+          "Panama"
+        ]
+      }
+    ],
+    "best_third_qualifiers": [
+      "Czechia",
+      "Bosnia and Herzegovina",
+      "Scotland",
+      "Australia",
+      "Curaçao",
+      "Sweden",
+      "Iran",
+      "Iraq"
+    ],
+    "knockout": [
+      {
+        "match": 73,
+        "round": "Round of 32",
+        "home": "South Korea",
+        "away": "Canada",
+        "winner": "South Korea"
+      },
+      {
+        "match": 74,
+        "round": "Round of 32",
+        "home": "Germany",
+        "away": "Curaçao",
+        "winner": "Germany"
+      },
+      {
+        "match": 75,
+        "round": "Round of 32",
+        "home": "Netherlands",
+        "away": "Morocco",
+        "winner": "Netherlands"
+      },
+      {
+        "match": 76,
+        "round": "Round of 32",
+        "home": "Brazil",
+        "away": "Japan",
+        "winner": "Brazil"
+      },
+      {
+        "match": 77,
+        "round": "Round of 32",
+        "home": "France",
+        "away": "Iraq",
+        "winner": "France"
+      },
+      {
+        "match": 78,
+        "round": "Round of 32",
+        "home": "Ecuador",
+        "away": "Austria",
+        "winner": "Ecuador"
+      },
+      {
+        "match": 79,
+        "round": "Round of 32",
+        "home": "Mexico",
+        "away": "Scotland",
+        "winner": "Mexico"
+      },
+      {
+        "match": 80,
+        "round": "Round of 32",
+        "home": "England",
+        "away": "DR Congo",
+        "winner": "England"
+      },
+      {
+        "match": 81,
+        "round": "Round of 32",
+        "home": "United States",
+        "away": "Sweden",
+        "winner": "United States"
+      },
+      {
+        "match": 82,
+        "round": "Round of 32",
+        "home": "Belgium",
+        "away": "Iran",
+        "winner": "Belgium"
+      },
+      {
+        "match": 83,
+        "round": "Round of 32",
+        "home": "Colombia",
+        "away": "Croatia",
+        "winner": "Croatia"
+      },
+      {
+        "match": 84,
+        "round": "Round of 32",
+        "home": "Spain",
+        "away": "Austria",
+        "winner": "Spain"
+      },
+      {
+        "match": 85,
+        "round": "Round of 32",
+        "home": "Switzerland",
+        "away": "Australia",
+        "winner": "Switzerland"
+      },
+      {
+        "match": 86,
+        "round": "Round of 32",
+        "home": "Argentina",
+        "away": "Uruguay",
+        "winner": "Argentina"
+      },
+      {
+        "match": 87,
+        "round": "Round of 32",
+        "home": "Portugal",
+        "away": "Ghana",
+        "winner": "Portugal"
+      },
+      {
+        "match": 88,
+        "round": "Round of 32",
+        "home": "Paraguay",
+        "away": "Egypt",
+        "winner": "Egypt"
+      },
+      {
+        "match": 89,
+        "round": "Round of 16",
+        "home": "Germany",
+        "away": "France",
+        "winner": "Germany"
+      },
+      {
+        "match": 90,
+        "round": "Round of 16",
+        "home": "South Korea",
+        "away": "Netherlands",
+        "winner": "Netherlands"
+      },
+      {
+        "match": 91,
+        "round": "Round of 16",
+        "home": "Brazil",
+        "away": "Ecuador",
+        "winner": "Brazil"
+      },
+      {
+        "match": 92,
+        "round": "Round of 16",
+        "home": "Mexico",
+        "away": "England",
+        "winner": "England"
+      },
+      {
+        "match": 93,
+        "round": "Round of 16",
+        "home": "Croatia",
+        "away": "Spain",
+        "winner": "Spain"
+      },
+      {
+        "match": 94,
+        "round": "Round of 16",
+        "home": "United States",
+        "away": "Belgium",
+        "winner": "United States"
+      },
+      {
+        "match": 95,
+        "round": "Round of 16",
+        "home": "Argentina",
+        "away": "Egypt",
+        "winner": "Argentina"
+      },
+      {
+        "match": 96,
+        "round": "Round of 16",
+        "home": "Switzerland",
+        "away": "Portugal",
+        "winner": "Portugal"
+      },
+      {
+        "match": 97,
+        "round": "Quarterfinal",
+        "home": "Germany",
+        "away": "Netherlands",
+        "winner": "Germany"
+      },
+      {
+        "match": 98,
+        "round": "Quarterfinal",
+        "home": "Spain",
+        "away": "United States",
+        "winner": "Spain"
+      },
+      {
+        "match": 99,
+        "round": "Quarterfinal",
+        "home": "Brazil",
+        "away": "England",
+        "winner": "England"
+      },
+      {
+        "match": 100,
+        "round": "Quarterfinal",
+        "home": "Argentina",
+        "away": "Portugal",
+        "winner": "Argentina"
+      },
+      {
+        "match": 101,
+        "round": "Semifinal",
+        "home": "Germany",
+        "away": "Spain",
+        "winner": "Spain"
+      },
+      {
+        "match": 102,
+        "round": "Semifinal",
+        "home": "England",
+        "away": "Argentina",
+        "winner": "Argentina"
+      },
+      {
+        "match": 103,
+        "round": "Third-Place Play-Off",
+        "home": "Germany",
+        "away": "England",
+        "winner": "Germany"
+      },
+      {
+        "match": 104,
+        "round": "Final",
+        "home": "Spain",
+        "away": "Argentina",
+        "winner": "Spain"
+      }
+    ],
+    "rationale": "Spain wins their second World Cup, edging Argentina in a rematch of the 2022 final, showcasing superior midfield control. Lionel Messi claims the Golden Boot with clutch goals, while Curaçao shocks as a best-third qualifier. The U.S. reaches the quarterfinals as hosts, but Spain's consistency and tactical discipline carry them through a deep knockout run."
+  },
+  "reasoning": "**Reasoning:**\n\nThe 2026 World Cup, hosted across the U.S., Canada, and Mexico, features a 48-team format with expanded pathways through the group stage. Strong favorites like **Spain**, **France**, **Argentina**, and **England** remain top contenders, but depth and squad continuity matter more than ever. Host nations **USA**, **Mexico**, and **Canada** receive boosts, but only the U.S. has the squad quality to go deep. **Spain**, as top seed, benefits from balanced strength and tactical maturity under Luis de la Fuente. **France** and **Argentina** remain elite, while **Brazil** looks slightly less dominant than in past cycles. **England** is consistent but often falters in knockout pressure.\n\nIn the groups:\n- **Group A**: Mexico edges South Korea for top spot; Czechia surprises as third.\n- **Group B**: Switzerland wins; Canada qualifies as runner-up; Bosnia fades.\n- **Group C**: Brazil dominates; Morocco holds off Scotland for second.\n- **Group D**: USA wins; Paraguay edges Australia on goal difference.\n- **Group E**: Germany leads; Ecuador second; Curaçao outperforms but falls short.\n- **Group F**: Netherlands wins; Japan second; Sweden misses out.\n- **Group G**: Belgium wins; Egypt surprises; Iran edges New Zealand.\n- **Group H**: Spain wins; Uruguay second; Cape Verde shocks Saudi Arabia.\n- **Group I**: France wins; Senegal second; Iraq edges Norway.\n- **Group J**: Argentina wins; Austria surprises Algeria; Jordan last.\n- **Group K**: Portugal wins; Colombia second; DR Congo edges Uzbekistan.\n- **Group L**: England wins; Croatia second; Ghana third with strong attack.\n\nBest third-placed teams: The cutoff will be around 4 points. The eight best thirds: **Czechia (A)**, **Bosnia and Herzegovina (B)**, **Scotland (C)**, **Australia (D)**, **Curaçao (E)**, **Sweden (F)**, **Iran (G)**, **Iraq (I)**. **Ghana (L)** and **DR Congo (K)** miss out narrowly.\n\nKnockout path:\n- Spain and France meet in semifinals, with Spain edging it.\n- Argentina defeats England in a tight QF.\n- USA stuns Germany in R16 but falls to Spain in quarters.\n- Final: **Spain vs Argentina** — rematch of 2022 final, this time Spain wins on penalties after 2-2 draw.\n- **Lionel Messi** wins Golden Boot with 7 goals, including hat-trick vs Jordan.\n- **Curaçao** is dark horse — wins group stage match vs Ivory Coast, scores crucial goals, and pushes Germany close.",
+  "warnings": [
+    "third_place does not match the play-off (match 103) winner."
+  ],
+  "error": null
+}

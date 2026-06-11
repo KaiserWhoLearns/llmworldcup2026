@@ -1,0 +1,25 @@
+{
+  "_comment": "Roster of models to query. Edit `model` strings to match what your accounts can serve, and flip `enabled`. `id` is the slug used for the output filename and in the web UI; keep it stable. `grounded: true` entries attach each provider's official hosted tools (web search, web fetch, code execution) so the model can look up current info — approximating the consumer chat apps. Anthropic IDs are authoritative as of June 2026; Google / OpenAI / Together IDs and the grounded tool identifiers are sensible defaults — VERIFY them against your provider's current docs before a real run.",
+  "models": [
+    { "id": "anthropic-fable-5", "label": "Claude Fable 5", "provider": "anthropic", "model": "claude-fable-5", "grounded": false, "enabled": true, "_note": "Thinking always on (param omitted by the adapter)." },
+    { "id": "anthropic-fable-5-web", "label": "Claude Fable 5 (web)", "provider": "anthropic", "model": "claude-fable-5", "grounded": true, "enabled": true },
+
+    { "id": "anthropic-opus-4-8", "label": "Claude Opus 4.8", "provider": "anthropic", "model": "claude-opus-4-8", "grounded": false, "enabled": true },
+    { "id": "anthropic-opus-4-8-web", "label": "Claude Opus 4.8 (web)", "provider": "anthropic", "model": "claude-opus-4-8", "grounded": true, "enabled": true },
+
+    { "id": "google-gemini-pro", "label": "Gemini 2.5 Pro", "provider": "google", "model": "gemini-2.5-pro", "grounded": false, "enabled": false, "_note": "Disabled: gemini-2.5-pro is not available on the free tier (free-tier quota is 0 → 429). Re-enable after adding billing to the Google project." },
+    { "id": "google-gemini-pro-web", "label": "Gemini 2.5 Pro (web)", "provider": "google", "model": "gemini-2.5-pro", "grounded": true, "enabled": false, "_note": "Disabled with the cold Pro entry — needs a paid Google tier." },
+
+    { "id": "google-gemini-flash", "label": "Gemini 2.5 Flash", "provider": "google", "model": "gemini-2.5-flash", "grounded": false, "enabled": true, "_note": "VERIFY model id." },
+    { "id": "google-gemini-flash-web", "label": "Gemini 2.5 Flash (web)", "provider": "google", "model": "gemini-2.5-flash", "grounded": true, "enabled": true },
+
+    { "id": "openai-gpt", "label": "GPT-5.4", "provider": "openai", "model": "gpt-5.4", "grounded": false, "enabled": true },
+    { "id": "openai-gpt-web", "label": "GPT-5.4 (web)", "provider": "openai", "model": "gpt-5.4", "grounded": true, "enabled": true },
+
+    { "id": "openai-gpt-mini", "label": "GPT-5.4 mini", "provider": "openai", "model": "gpt-5.4-mini", "grounded": false, "enabled": true },
+    { "id": "openai-gpt-mini-web", "label": "GPT-5.4 mini (web)", "provider": "openai", "model": "gpt-5.4-mini", "grounded": true, "enabled": true },
+
+    { "id": "together-qwen", "label": "Qwen3-235B-A22B-Instruct", "provider": "together", "model": "Qwen/Qwen3-235B-A22B-Instruct-2507-tput", "grounded": false, "enabled": true, "_note": "Verified present in Together's catalog (June 2026). No hosted tools, so cold-only." },
+    { "id": "together-deepseek", "label": "DeepSeek-V4-Pro", "provider": "together", "model": "deepseek-ai/DeepSeek-V4-Pro", "grounded": false, "enabled": true, "_note": "Verified present in Together's catalog (June 2026). No hosted tools, so cold-only." }
+  ]
+}

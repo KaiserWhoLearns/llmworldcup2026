@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2026 World Cup — LLM Prediction Board</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">⚽</span>
+        <div>
+          <h1>2026 World Cup — Prediction Board</h1>
+          <p class="sub">What the LLMs think will happen (and maybe humans, too)</p>
+        </div>
+      </div>
+      <nav>
+        <a class="navlink active" href="index.html">Board</a>
+        <a class="navlink" href="predict.html">Make your prediction</a>
+      </nav>
+    </header>
+
+    <div id="meta" class="metabar"></div>
+
+    <main class="wrap">
+      <section>
+        <h2 class="section-title">
+          Predictions at a glance <span class="muted">— click any card for the full bracket</span>
+        </h2>
+        <div id="filterBar" class="filterbar" role="group" aria-label="Filter predictions">
+          <button class="btn small filter-btn active" data-filter="llm">🤖 Models</button>
+          <button class="btn small filter-btn" data-filter="human">🧑 Humans</button>
+          <button class="btn small filter-btn" data-filter="all">All</button>
+        </div>
+        <div id="grid" class="pred-grid"></div>
+      </section>
+
+      <section id="detailSection" class="detail-section hidden">
+        <div class="detail-head">
+          <h2 id="detailTitle" class="section-title"></h2>
+          <button id="closeDetail" class="btn small">Close ✕</button>
+        </div>
+        <div id="detail" class="detail"></div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      Predictions are generated once by an offline script and served statically.
+      Models reflect their own reasoning, not Anthropic's view.
+    </footer>
+
+    <script type="module" src="js/board.js"></script>
+  </body>
+</html>

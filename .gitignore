@@ -1,0 +1,14 @@
+# Secrets
+llm/.env
+.env
+
+# Python
+llm/.venv/
+__pycache__/
+*.pyc
+
+# Raw (unvalidated) model dumps — debugging artifacts, not served
+llm/predictions_raw/
+
+# OS
+.DS_Store

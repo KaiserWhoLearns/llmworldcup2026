@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2026 World Cup — Make Your Prediction</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">⚽</span>
+        <div>
+          <h1>Make Your Prediction</h1>
+          <p class="sub">Order each group, pick the qualifying thirds, click your way to a champion</p>
+        </div>
+      </div>
+      <nav>
+        <a class="navlink" href="index.html">Board</a>
+        <a class="navlink active" href="predict.html">Make your prediction</a>
+      </nav>
+    </header>
+
+    <div id="summary" class="summarybar"></div>
+
+    <main class="wrap">
+      <section class="entry-meta">
+        <div class="field">
+          <label for="entryName">Your name / handle</label>
+          <input id="entryName" type="text" placeholder="e.g. Sam P." />
+        </div>
+        <div class="field">
+          <label for="goldenBoot">Golden Boot (top scorer)</label>
+          <input id="goldenBoot" type="text" placeholder="player name" />
+        </div>
+        <div class="field">
+          <label for="darkHorse">Dark horse</label>
+          <input id="darkHorse" type="text" placeholder="team" />
+        </div>
+        <div class="field wide">
+          <label for="rationale">Rationale (optional)</label>
+          <input id="rationale" type="text" placeholder="why these picks?" />
+        </div>
+        <div class="actions">
+          <button id="saveBtn" class="btn primary">Save prediction</button>
+          <button id="submitBtn" class="btn" title="Open a pre-filled GitHub issue to add your pick to the public board">Submit to leaderboard ↗</button>
+          <button id="resetBtn" class="btn">Reset</button>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">1 · Group stage — rank each group</h2>
+        <p class="hint">Pick the finishing order; choosing a team for one slot swaps it with whoever was there.</p>
+        <div id="groups" class="groups-grid"></div>
+      </section>
+
+      <section>
+        <h2 class="section-title">2 · Knockout — pick a winner in every match</h2>
+        <p class="hint">
+          Winner/runner-up slots fill in from your groups. For the eight third-place slots, choose which
+          qualifying 3rd-placed team takes it. Click a team to advance it; later rounds update automatically.
+        </p>
+        <div id="bracket" class="bracket"></div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Saved predictions <span class="muted">(stored in this browser)</span></h2>
+        <div id="saved" class="saved"></div>
+      </section>
+    </main>
+
+    <script type="module" src="js/predict.js"></script>
+  </body>
+</html>

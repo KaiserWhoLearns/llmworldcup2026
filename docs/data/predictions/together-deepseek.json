@@ -1,0 +1,366 @@
+{
+  "id": "together-deepseek",
+  "label": "DeepSeek-V4-Pro",
+  "provider": "together",
+  "model": "deepseek-ai/DeepSeek-V4-Pro",
+  "resolvedModel": "deepseek-ai/DeepSeek-V4-Pro",
+  "grounded": false,
+  "generatedAt": "2026-06-11T22:10:03.127575+00:00",
+  "prediction": {
+    "champion": "England",
+    "runner_up": "Spain",
+    "third_place": "Argentina",
+    "golden_boot": "Erling Haaland",
+    "dark_horse": "Morocco",
+    "groups": [
+      {
+        "group": "A",
+        "standings": [
+          "Mexico",
+          "South Africa",
+          "South Korea",
+          "Czechia"
+        ]
+      },
+      {
+        "group": "B",
+        "standings": [
+          "Switzerland",
+          "Bosnia and Herzegovina",
+          "Canada",
+          "Qatar"
+        ]
+      },
+      {
+        "group": "C",
+        "standings": [
+          "Brazil",
+          "Morocco",
+          "Scotland",
+          "Haiti"
+        ]
+      },
+      {
+        "group": "D",
+        "standings": [
+          "United States",
+          "Turkey",
+          "Paraguay",
+          "Australia"
+        ]
+      },
+      {
+        "group": "E",
+        "standings": [
+          "Germany",
+          "Ecuador",
+          "Ivory Coast",
+          "Curaçao"
+        ]
+      },
+      {
+        "group": "F",
+        "standings": [
+          "Sweden",
+          "Netherlands",
+          "Japan",
+          "Tunisia"
+        ]
+      },
+      {
+        "group": "G",
+        "standings": [
+          "Belgium",
+          "Egypt",
+          "Iran",
+          "New Zealand"
+        ]
+      },
+      {
+        "group": "H",
+        "standings": [
+          "Spain",
+          "Uruguay",
+          "Saudi Arabia",
+          "Cape Verde"
+        ]
+      },
+      {
+        "group": "I",
+        "standings": [
+          "France",
+          "Norway",
+          "Senegal",
+          "Iraq"
+        ]
+      },
+      {
+        "group": "J",
+        "standings": [
+          "Argentina",
+          "Austria",
+          "Algeria",
+          "Jordan"
+        ]
+      },
+      {
+        "group": "K",
+        "standings": [
+          "Colombia",
+          "Portugal",
+          "Uzbekistan",
+          "DR Congo"
+        ]
+      },
+      {
+        "group": "L",
+        "standings": [
+          "England",
+          "Croatia",
+          "Panama",
+          "Ghana"
+        ]
+      }
+    ],
+    "best_third_qualifiers": [
+      "Japan",
+      "Ivory Coast",
+      "Senegal",
+      "Iran",
+      "Algeria",
+      "Scotland",
+      "Paraguay",
+      "Saudi Arabia"
+    ],
+    "knockout": [
+      {
+        "match": 73,
+        "round": "Round of 32",
+        "home": "South Africa",
+        "away": "Bosnia and Herzegovina",
+        "winner": "Bosnia and Herzegovina"
+      },
+      {
+        "match": 74,
+        "round": "Round of 32",
+        "home": "Germany",
+        "away": "Japan",
+        "winner": "Germany"
+      },
+      {
+        "match": 75,
+        "round": "Round of 32",
+        "home": "Morocco",
+        "away": "Netherlands",
+        "winner": "Morocco"
+      },
+      {
+        "match": 76,
+        "round": "Round of 32",
+        "home": "Brazil",
+        "away": "Sweden",
+        "winner": "Brazil"
+      },
+      {
+        "match": 77,
+        "round": "Round of 32",
+        "home": "France",
+        "away": "Ivory Coast",
+        "winner": "France"
+      },
+      {
+        "match": 78,
+        "round": "Round of 32",
+        "home": "Ecuador",
+        "away": "Norway",
+        "winner": "Norway"
+      },
+      {
+        "match": 79,
+        "round": "Round of 32",
+        "home": "Mexico",
+        "away": "Senegal",
+        "winner": "Mexico"
+      },
+      {
+        "match": 80,
+        "round": "Round of 32",
+        "home": "England",
+        "away": "Iran",
+        "winner": "England"
+      },
+      {
+        "match": 81,
+        "round": "Round of 32",
+        "home": "United States",
+        "away": "Ivory Coast",
+        "winner": "United States"
+      },
+      {
+        "match": 82,
+        "round": "Round of 32",
+        "home": "Belgium",
+        "away": "Algeria",
+        "winner": "Belgium"
+      },
+      {
+        "match": 83,
+        "round": "Round of 32",
+        "home": "Uzbekistan",
+        "away": "Croatia",
+        "winner": "Croatia"
+      },
+      {
+        "match": 84,
+        "round": "Round of 32",
+        "home": "Spain",
+        "away": "Austria",
+        "winner": "Spain"
+      },
+      {
+        "match": 85,
+        "round": "Round of 32",
+        "home": "Switzerland",
+        "away": "Scotland",
+        "winner": "Switzerland"
+      },
+      {
+        "match": 86,
+        "round": "Round of 32",
+        "home": "Argentina",
+        "away": "Uruguay",
+        "winner": "Argentina"
+      },
+      {
+        "match": 87,
+        "round": "Round of 32",
+        "home": "Colombia",
+        "away": "Paraguay",
+        "winner": "Colombia"
+      },
+      {
+        "match": 88,
+        "round": "Round of 32",
+        "home": "Turkey",
+        "away": "Egypt",
+        "winner": "Egypt"
+      },
+      {
+        "match": 89,
+        "round": "Round of 16",
+        "home": "Germany",
+        "away": "France",
+        "winner": "France"
+      },
+      {
+        "match": 90,
+        "round": "Round of 16",
+        "home": "Bosnia and Herzegovina",
+        "away": "Morocco",
+        "winner": "Morocco"
+      },
+      {
+        "match": 91,
+        "round": "Round of 16",
+        "home": "Brazil",
+        "away": "Norway",
+        "winner": "Brazil"
+      },
+      {
+        "match": 92,
+        "round": "Round of 16",
+        "home": "Mexico",
+        "away": "England",
+        "winner": "England"
+      },
+      {
+        "match": 93,
+        "round": "Round of 16",
+        "home": "Croatia",
+        "away": "Spain",
+        "winner": "Spain"
+      },
+      {
+        "match": 94,
+        "round": "Round of 16",
+        "home": "United States",
+        "away": "Belgium",
+        "winner": "United States"
+      },
+      {
+        "match": 95,
+        "round": "Round of 16",
+        "home": "Argentina",
+        "away": "Egypt",
+        "winner": "Argentina"
+      },
+      {
+        "match": 96,
+        "round": "Round of 16",
+        "home": "Switzerland",
+        "away": "Colombia",
+        "winner": "Colombia"
+      },
+      {
+        "match": 97,
+        "round": "Quarter-final",
+        "home": "France",
+        "away": "Morocco",
+        "winner": "France"
+      },
+      {
+        "match": 98,
+        "round": "Quarter-final",
+        "home": "Spain",
+        "away": "United States",
+        "winner": "Spain"
+      },
+      {
+        "match": 99,
+        "round": "Quarter-final",
+        "home": "Brazil",
+        "away": "England",
+        "winner": "England"
+      },
+      {
+        "match": 100,
+        "round": "Quarter-final",
+        "home": "Argentina",
+        "away": "Colombia",
+        "winner": "Argentina"
+      },
+      {
+        "match": 101,
+        "round": "Semi-final",
+        "home": "Spain",
+        "away": "Argentina",
+        "winner": "Spain"
+      },
+      {
+        "match": 102,
+        "round": "Semi-final",
+        "home": "France",
+        "away": "England",
+        "winner": "England"
+      },
+      {
+        "match": 103,
+        "round": "Third place",
+        "home": "France",
+        "away": "Argentina",
+        "winner": "Argentina"
+      },
+      {
+        "match": 104,
+        "round": "Final",
+        "home": "Spain",
+        "away": "England",
+        "winner": "England"
+      }
+    ],
+    "rationale": "England end their long wait by defeating Spain in the final with a blend of youth and experience. Spain's technical excellence takes them through Argentina in semis, while France falter against England's set-piece prowess in the other semi. Morocco again reach the quarter-finals, showing 2022 was no fluke, while Colombia and the USA impress but fall before the final four. Haaland wins the golden boot by feasting on lower-ranked opposition in a group-stage goal explosion."
+  },
+  "reasoning": "**Reasoning through the tournament:**\n\n**Group stage thoughts:**\n- Group A sees Mexico win their group on home soil, South Africa surprise by finishing second ahead of South Korea (Korea struggles with travel/conditions).  \n- Group B is tricky: Canada as co-hosts stumbles, Bosnia edges out Switzerland, Qatar finish 4th.  \n- Group C: Brazil top the group easily, Morocco continues their good form from 2022 to advance, Scotland going through as a third-place team.  \n- Group D: USA win the group, Turkey edge Paraguay for runner-up, Australia’s style doesn't suit humidity.  \n- Group E: Germany advance but Ecuador surprise everyone by finishing second with Ivory Coast an impressive 3rd-place qualifier.  \n- Group F: Sweden top the group, Netherlands finish second, Japan go through as third.  \n- Group G: Belgium win, Egypt second, Iran's fast counters make them a dangerous third-place team.  \n- Group H: Spain win, Uruguay grab second; Saudi Arabia get third but with poor goal difference miss out on a best third-placed spot.  \n- Group I: France dominate, Norway get second behind a star performance from Haaland, Senegal qualify as third.  \n- Group J: Argentina glide through, Austria claim second over Algeria, but Algeria go through as a third-place team.  \n- Group K: Colombia shock Portugal for the top spot, Portugal come in second, but these teams later make deep runs.  \n- Group L: England win the group, Croatia are second. Ghana’s defense leaks so they finish bottom.\n\n**Best third-placed sides (8):** Ivory Coast, Japan, Iran, Senegal, Algeria, Uruguay (even though Uruguay placed second actually — so swap: Scotland or Ecuador instead depending on tiebreakers… but among third-placed sides you need 8 best: I'd pick Japan, Ivory Coast, Senegal, Iran, Algeria, Scotland, Saudi Arabia, Ecuador. Then tweak group predictions to match.)\n\nActually, ensuring 8 best third-placed: Japan, Ivory Coast, Iran, Senegal, Algeria, Scotland, Ecuador, Australia. So I'll put Japan 3rd in Group F, Ecuador 3rd in Group E, etc.\n\n**Knockout predictions:**\n- France make semis but fall to Spain.\n- Argentina defeat Germany in quarters, then lose to England in semis in a penalty heartbreaker.\n- Final: Spain vs England — England finally win it.\n- Golden boot: Haaland (scoring many in group stage, carrying Norway to R16).\n- Dark horse: Morocco reach quarter-final again, beating Switzerland and a weakened Colombia.\n\n**Final shape:** England 1st, Spain 2nd, Argentina 3rd.\n\n---",
+  "warnings": [],
+  "error": null
+}
