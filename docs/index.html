@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>2026 World Cup — LLM Prediction Board</title>
+    <title>LLM World Cup Predictions</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚽</text></svg>" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -11,7 +12,7 @@
       <div class="brand">
         <span class="logo">⚽</span>
         <div>
-          <h1>2026 World Cup — Prediction Board</h1>
+          <h1>LLM World Cup Predictions</h1>
           <p class="sub">What the LLMs think will happen (and maybe humans, too)</p>
         </div>
       </div>
@@ -33,6 +34,11 @@
           <button class="btn small filter-btn" data-filter="human">🧑 Humans</button>
           <button class="btn small filter-btn" data-filter="all">All</button>
         </div>
+        <p class="muted legend">
+          🔎 <strong>(web)</strong> entries use the provider's hosted tools — web search,
+          web fetch, and code execution — to look up current information before predicting.
+          Entries without the badge rely only on the model's parametric knowledge (no tools, no internet).
+        </p>
         <div id="grid" class="pred-grid"></div>
       </section>
 
@@ -46,8 +52,7 @@
     </main>
 
     <footer class="foot">
-      Predictions are generated once by an offline script and served statically.
-      Models reflect their own reasoning, not Anthropic's view.
+      Made with love 🫶 and brain fart 🧠💨 by Kaiser Sun.
     </footer>
 
     <script type="module" src="js/board.js"></script>
