@@ -290,9 +290,9 @@ function buildIssueUrl(name, record) {
     `- 🐴 **Dark horse:** ${p.dark_horse || "—"}`,
     p.rationale ? `\n> ${p.rationale}` : "",
     "",
-    "<!-- Do not edit below: machine-readable prediction for the board ingest. -->",
+    "<!-- Do not edit below: paste your full prediction JSON here. -->",
     "```json",
-    JSON.stringify(record, null, 2),
+    "PASTE_JSON_HERE",
     "```",
   ].join("\n");
 
@@ -304,9 +304,9 @@ function buildIssueUrl(name, record) {
   return `https://github.com/${GITHUB_REPO}/issues/new?${params.toString()}`;
 }
 
-function submitToLeaderboard() {
+async function submitToLeaderboard() {
   if (GITHUB_REPO === "OWNER/REPO") {
-    alert("Leaderboard submission isn't configured yet — set GITHUB_REPO in web/js/predict.js to your repo.");
+    alert("Leaderboard submission isn't configured yet — set GITHUB_REPO in predict.js to your repo.");
     return;
   }
   const name = document.getElementById("entryName").value.trim();
@@ -318,12 +318,28 @@ function submitToLeaderboard() {
   const incomplete = resolved.filter((m) => !m.winner).length;
   if (incomplete && !confirm(`${incomplete} match(es) have no winner yet. Submit anyway?`)) return;
 
-  const url = buildIssueUrl(name, buildRecord());
-  // GitHub silently truncates very long prefilled bodies; warn rather than fail.
-  if (url.length > 8000) {
-    alert("Your prediction is large; GitHub may truncate the pre-filled issue. If so, use Export JSON and paste it in manually.");
+  const record = buildRecord();
+  const json = JSON.stringify(record, null, 2);
+
+  // Copy full JSON to clipboard so the user can paste it into the issue body.
+  try {
+    await navigator.clipboard.writeText(json);
+  } catch {
+    // Clipboard blocked — fall back to a prompt the user can manually copy from.
+    prompt("Copy your full prediction JSON, then paste it into the issue body:", json);
+    return;
   }
+
+  const url = buildIssueUrl(name, record);
   window.open(url, "_blank", "noopener");
+
+  // Brief delay so the tab opens before the alert steals focus.
+  setTimeout(() => {
+    alert(
+      "Your full prediction JSON has been copied to the clipboard.\n\n" +
+      "In the GitHub issue that just opened, replace PASTE_JSON_HERE with Cmd+V (or Ctrl+V), then click Submit."
+    );
+  }, 300);
 }
 
 function downloadJSON(entry) {
