@@ -1,0 +1,128 @@
+{
+  "format": "compact",
+  "name": "thomas muller",
+  "golden_boot": "michael olise",
+  "dark_horse": "norway",
+  "rationale": "",
+  "champion": "France",
+  "runner_up": "England",
+  "third_place": "Argentina",
+  "groupOrder": {
+    "A": [
+      "South Korea",
+      "Mexico",
+      "Czechia",
+      "South Africa"
+    ],
+    "B": [
+      "Switzerland",
+      "Bosnia and Herzegovina",
+      "Canada",
+      "Qatar"
+    ],
+    "C": [
+      "Brazil",
+      "Morocco",
+      "Scotland",
+      "Haiti"
+    ],
+    "D": [
+      "Turkey",
+      "Paraguay",
+      "United States",
+      "Australia"
+    ],
+    "E": [
+      "Germany",
+      "Ecuador",
+      "Curaçao",
+      "Ivory Coast"
+    ],
+    "F": [
+      "Netherlands",
+      "Japan",
+      "Sweden",
+      "Tunisia"
+    ],
+    "G": [
+      "Belgium",
+      "Iran",
+      "New Zealand",
+      "Egypt"
+    ],
+    "H": [
+      "Spain",
+      "Uruguay",
+      "Saudi Arabia",
+      "Cape Verde"
+    ],
+    "I": [
+      "France",
+      "Norway",
+      "Senegal",
+      "Iraq"
+    ],
+    "J": [
+      "Argentina",
+      "Austria",
+      "Algeria",
+      "Jordan"
+    ],
+    "K": [
+      "Colombia",
+      "Portugal",
+      "Uzbekistan",
+      "DR Congo"
+    ],
+    "L": [
+      "England",
+      "Croatia",
+      "Ghana",
+      "Panama"
+    ]
+  },
+  "thirds": {
+    "74": "Sweden",
+    "77": "Scotland",
+    "79": "Senegal",
+    "80": "Algeria",
+    "81": "Canada",
+    "82": "Czechia",
+    "85": "New Zealand",
+    "87": "United States"
+  },
+  "winners": {
+    "73": "Mexico",
+    "74": "Germany",
+    "75": "Netherlands",
+    "76": "Brazil",
+    "77": "France",
+    "78": "Norway",
+    "79": "South Korea",
+    "80": "England",
+    "81": "Turkey",
+    "82": "Belgium",
+    "83": "Portugal",
+    "84": "Spain",
+    "85": "Switzerland",
+    "86": "Argentina",
+    "87": "Colombia",
+    "88": "Iran",
+    "89": "France",
+    "90": "Netherlands",
+    "91": "Brazil",
+    "92": "England",
+    "93": "Spain",
+    "94": "Belgium",
+    "95": "Argentina",
+    "96": "Switzerland",
+    "97": "France",
+    "98": "Spain",
+    "99": "England",
+    "100": "Argentina",
+    "101": "France",
+    "102": "England",
+    "103": "Argentina",
+    "104": "France"
+  }
+}
