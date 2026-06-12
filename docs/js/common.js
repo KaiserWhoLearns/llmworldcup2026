@@ -100,6 +100,39 @@ export function resolveBracket(template, state) {
   return result;
 }
 
+/**
+ * Expand a compact human submission (just groupOrder / thirds / winners plus the
+ * meta fields) into the full prediction record shape the board renders for models.
+ * Keeps a single source of truth with predict.js's buildRecord.
+ */
+export function expandRecord(compact, tournament) {
+  const state = {
+    groupOrder: compact.groupOrder || {},
+    thirds: compact.thirds || {},
+    winners: compact.winners || {},
+  };
+  const resolved = resolveBracket(tournament, state);
+  const byNum = Object.fromEntries(resolved.map((m) => [m.match, m]));
+  const champ = byNum[104]?.winner || "";
+  const runner = byNum[104] ? (champ === byNum[104].home ? byNum[104].away : byNum[104].home) : "";
+  const third = byNum[103]?.winner || "";
+  return {
+    prediction: {
+      champion: champ,
+      runner_up: runner,
+      third_place: third,
+      golden_boot: compact.golden_boot || "",
+      dark_horse: compact.dark_horse || "",
+      rationale: compact.rationale || "",
+      groups: Object.entries(state.groupOrder).map(([g, standings]) => ({ group: g, standings })),
+      best_third_qualifiers: [...new Set(Object.values(state.thirds))],
+      knockout: resolved.map((m) => ({ match: m.match, round: m.round, home: m.home, away: m.away, winner: m.winner })),
+    },
+    warnings: [],
+    error: null,
+  };
+}
+
 export const ROUND_ORDER = [
   "Round of 32",
   "Round of 16",

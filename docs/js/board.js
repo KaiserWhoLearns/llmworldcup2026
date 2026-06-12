@@ -2,6 +2,7 @@ import {
   loadTournament,
   loadIndex,
   loadPrediction,
+  expandRecord,
   ROUND_ORDER,
   el,
 } from "./common.js";
@@ -109,6 +110,8 @@ async function select(id) {
   if (!record) {
     try {
       record = await loadPrediction(entry.id);
+      // Human submissions are stored compact; rebuild the full bracket for display.
+      if (record && record.format === "compact") record = expandRecord(record, tournament);
       entry.record = record;
     } catch (err) {
       showError(`Failed to load ${entry.label}: ${err.message}`);

@@ -96,8 +96,11 @@ jobs:
               branch: branchName,
             });
 
+            // Compact submissions keep fields at the top level; full records nest
+            // them under .prediction. Read from whichever is present.
+            const p = record.prediction || record;
+
             // Update docs/data/index.json so the board lists this entry
-            const p = record.prediction || {};
             const indexPath = "docs/data/index.json";
             const { data: indexFile } = await github.rest.repos.getContent({
               owner: context.repo.owner,

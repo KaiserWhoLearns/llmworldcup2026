@@ -1,6 +1,7 @@
 import {
   loadTournament,
   resolveBracket,
+  expandRecord,
   flattenTemplate,
   thirdCandidateGroups,
   isThirdSlot,
@@ -201,7 +202,10 @@ function renderSummary(resolved) {
 }
 
 /* --------------------------- persistence ------------------------------- */
-function buildRecord() {
+// Compact submission: only the minimal state plus meta. The full bracket is
+// reconstructed deterministically from this via expandRecord, which keeps the
+// issue URL short enough for GitHub (the full record is ~8x larger).
+function buildCompact(name = "") {
   const resolved = resolveBracket(tournament, state);
   const byNum = Object.fromEntries(resolved.map((m) => [m.match, m]));
   const champ = byNum[104]?.winner || "";
@@ -209,20 +213,22 @@ function buildRecord() {
   const third = byNum[103]?.winner || "";
 
   return {
-    prediction: {
-      champion: champ,
-      runner_up: runner,
-      third_place: third,
-      golden_boot: document.getElementById("goldenBoot").value.trim(),
-      dark_horse: document.getElementById("darkHorse").value.trim(),
-      rationale: document.getElementById("rationale").value.trim(),
-      groups: Object.entries(state.groupOrder).map(([g, standings]) => ({ group: g, standings })),
-      best_third_qualifiers: [...new Set(Object.values(state.thirds))],
-      knockout: resolved.map((m) => ({ match: m.match, round: m.round, home: m.home, away: m.away, winner: m.winner })),
-    },
-    warnings: [],
-    error: null,
+    format: "compact",
+    name,
+    golden_boot: document.getElementById("goldenBoot").value.trim(),
+    dark_horse: document.getElementById("darkHorse").value.trim(),
+    rationale: document.getElementById("rationale").value.trim(),
+    champion: champ,
+    runner_up: runner,
+    third_place: third,
+    groupOrder: state.groupOrder,
+    thirds: state.thirds,
+    winners: state.winners,
   };
+}
+
+function buildRecord() {
+  return expandRecord(buildCompact(), tournament);
 }
 
 function getSaved() {
@@ -289,21 +295,20 @@ function submitToLeaderboard() {
   const incomplete = resolved.filter((m) => !m.winner).length;
   if (incomplete && !confirm(`${incomplete} match(es) have no winner yet. Submit anyway?`)) return;
 
-  const record = buildRecord();
-  const p = record.prediction;
+  const compact = buildCompact(name);
   const body = [
     `**Name / handle:** ${name}`,
     "",
-    `- 🏆 **Champion:** ${p.champion || "—"}`,
-    `- 🥈 **Runner-up:** ${p.runner_up || "—"}`,
-    `- 🥉 **Third place:** ${p.third_place || "—"}`,
-    `- 👟 **Golden Boot:** ${p.golden_boot || "—"}`,
-    `- 🐴 **Dark horse:** ${p.dark_horse || "—"}`,
-    p.rationale ? `\n> ${p.rationale}` : "",
+    `- 🏆 **Champion:** ${compact.champion || "—"}`,
+    `- 🥈 **Runner-up:** ${compact.runner_up || "—"}`,
+    `- 🥉 **Third place:** ${compact.third_place || "—"}`,
+    `- 👟 **Golden Boot:** ${compact.golden_boot || "—"}`,
+    `- 🐴 **Dark horse:** ${compact.dark_horse || "—"}`,
+    compact.rationale ? `\n> ${compact.rationale}` : "",
     "",
     "<!-- prediction data — do not edit below this line -->",
     "```json",
-    JSON.stringify(record, null, 2),
+    JSON.stringify(compact),
     "```",
   ].join("\n");
 
