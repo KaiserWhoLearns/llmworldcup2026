@@ -84,8 +84,8 @@ jobs:
               sha: baseSha,
             });
 
-            // Commit prediction file
-            const filePath = `predictions/${slug}.json`;
+            // Commit prediction file into the board's data directory
+            const filePath = `docs/data/predictions/${slug}.json`;
             const content = Buffer.from(JSON.stringify(record, null, 2)).toString("base64");
             await github.rest.repos.createOrUpdateFileContents({
               owner: context.repo.owner,
@@ -96,8 +96,40 @@ jobs:
               branch: branchName,
             });
 
-            // Create PR
+            // Update docs/data/index.json so the board lists this entry
             const p = record.prediction || {};
+            const indexPath = "docs/data/index.json";
+            const { data: indexFile } = await github.rest.repos.getContent({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              path: indexPath,
+              ref: branchName,
+            });
+            const index = JSON.parse(Buffer.from(indexFile.content, "base64").toString("utf8"));
+            const entry = {
+              id: slug,
+              label: name,
+              kind: "human",
+              grounded: false,
+              generatedAt: issue.created_at,
+              hasError: false,
+              champion: p.champion || "",
+              runnerUp: p.runner_up || "",
+            };
+            const existingAt = index.findIndex((e) => e.id === slug);
+            if (existingAt >= 0) index[existingAt] = entry;
+            else index.push(entry);
+            await github.rest.repos.createOrUpdateFileContents({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              path: indexPath,
+              message: `Index prediction: ${name}`,
+              content: Buffer.from(JSON.stringify(index, null, 2)).toString("base64"),
+              sha: indexFile.sha,
+              branch: branchName,
+            });
+
+            // Create PR
             const prBody = [
               `Submitted via issue #${issue.number} by @${issue.user.login}`,
               "",

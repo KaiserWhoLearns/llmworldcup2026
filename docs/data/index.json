@@ -142,5 +142,15 @@
     "hasError": false,
     "champion": "Spain",
     "runnerUp": "Argentina"
+  },
+  {
+    "id": "your-mysterious-k",
+    "label": "Your Mysterious K",
+    "kind": "human",
+    "grounded": false,
+    "generatedAt": "2026-06-12T00:00:00+00:00",
+    "hasError": false,
+    "champion": "France",
+    "runnerUp": "Argentina"
   }
 ]
