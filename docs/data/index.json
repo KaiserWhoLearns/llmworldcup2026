@@ -152,5 +152,15 @@
     "hasError": false,
     "champion": "France",
     "runnerUp": "Argentina"
+  },
+  {
+    "id": "thomas-muller",
+    "label": "thomas muller",
+    "kind": "human",
+    "grounded": false,
+    "generatedAt": "2026-06-12T06:19:26Z",
+    "hasError": false,
+    "champion": "France",
+    "runnerUp": "England"
   }
 ]
