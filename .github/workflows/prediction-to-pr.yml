@@ -68,8 +68,15 @@ jobs:
             });
             const baseSha = ref.object.sha;
 
-            // Create branch
+            // Create branch (delete first if it already exists from a prior run)
             const branchName = `prediction/${slug}-${issue.number}`;
+            try {
+              await github.rest.git.deleteRef({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                ref: `heads/${branchName}`,
+              });
+            } catch (_) { /* branch didn't exist — fine */ }
             await github.rest.git.createRef({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -104,14 +111,34 @@ jobs:
               `Closes #${issue.number}`,
             ].join("\n");
 
-            const { data: pr } = await github.rest.pulls.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title: `Prediction: ${name}`,
-              body: prBody,
-              head: branchName,
-              base: defaultBranch,
-            });
+            // Create PR (or find the existing one if branch was already used)
+            let pr;
+            try {
+              ({ data: pr } = await github.rest.pulls.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `Prediction: ${name}`,
+                body: prBody,
+                head: branchName,
+                base: defaultBranch,
+              }));
+            } catch (e) {
+              if (e.status === 422) {
+                const { data: existing } = await github.rest.pulls.list({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  head: `${context.repo.owner}:${branchName}`,
+                  state: "open",
+                });
+                if (existing.length) {
+                  pr = existing[0];
+                } else {
+                  throw e;
+                }
+              } else {
+                throw e;
+              }
+            }
 
             // Comment on the issue with the PR link
             await github.rest.issues.createComment({
