@@ -1,0 +1,124 @@
+name: Prediction → PR
+
+on:
+  issues:
+    types: [opened, labeled]
+
+jobs:
+  create-pr:
+    if: contains(github.event.issue.labels.*.name, 'prediction')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Parse issue and create PR
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const body = issue.body || "";
+
+            // Extract JSON from fenced code block
+            const match = body.match(/```json\s*([\s\S]*?)\s*```/);
+            if (!match) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: "⚠️ Could not find a JSON code block in this issue. Please re-submit using the prediction form.",
+              });
+              core.setFailed("No JSON block found.");
+              return;
+            }
+
+            let record;
+            try {
+              record = JSON.parse(match[1]);
+            } catch (e) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: `⚠️ The prediction JSON is invalid: \`${e.message}\`. Please re-submit using the prediction form.`,
+              });
+              core.setFailed(`Invalid JSON: ${e.message}`);
+              return;
+            }
+
+            const titleMatch = issue.title.match(/^Prediction:\s*(.+)$/i);
+            const name = titleMatch ? titleMatch[1].trim() : `issue-${issue.number}`;
+            const slug = name.replace(/[^a-zA-Z0-9]+/g, "-").toLowerCase();
+
+            // Get default branch SHA
+            const { data: repo } = await github.rest.repos.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            });
+            const defaultBranch = repo.default_branch;
+
+            const { data: ref } = await github.rest.git.getRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: `heads/${defaultBranch}`,
+            });
+            const baseSha = ref.object.sha;
+
+            // Create branch
+            const branchName = `prediction/${slug}-${issue.number}`;
+            await github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: `refs/heads/${branchName}`,
+              sha: baseSha,
+            });
+
+            // Commit prediction file
+            const filePath = `predictions/${slug}.json`;
+            const content = Buffer.from(JSON.stringify(record, null, 2)).toString("base64");
+            await github.rest.repos.createOrUpdateFileContents({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              path: filePath,
+              message: `Add prediction: ${name}`,
+              content,
+              branch: branchName,
+            });
+
+            // Create PR
+            const p = record.prediction || {};
+            const prBody = [
+              `Submitted via issue #${issue.number} by @${issue.user.login}`,
+              "",
+              `- 🏆 **Champion:** ${p.champion || "—"}`,
+              `- 🥈 **Runner-up:** ${p.runner_up || "—"}`,
+              `- 🥉 **Third place:** ${p.third_place || "—"}`,
+              `- 👟 **Golden Boot:** ${p.golden_boot || "—"}`,
+              `- 🐴 **Dark horse:** ${p.dark_horse || "—"}`,
+              p.rationale ? `\n> ${p.rationale}` : "",
+              "",
+              `Closes #${issue.number}`,
+            ].join("\n");
+
+            const { data: pr } = await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Prediction: ${name}`,
+              body: prBody,
+              head: branchName,
+              base: defaultBranch,
+            });
+
+            // Comment on the issue with the PR link
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              body: `✅ PR created: ${pr.html_url}\n\nYour prediction will appear on the leaderboard once it's merged. Thanks for participating!`,
+            });
+
+            console.log(`PR created: ${pr.html_url}`);

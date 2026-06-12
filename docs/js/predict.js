@@ -275,36 +275,7 @@ function renderSaved() {
 }
 
 /* ----------------------- submit to leaderboard ------------------------ */
-// Build a pre-filled GitHub "New issue" URL. GitHub opens the compose form with
-// the title/body filled; the user is still the one who clicks "Submit". A later
-// GitHub Action can parse the fenced JSON block to ingest it into the board.
-function buildIssueUrl(name, record) {
-  const p = record.prediction;
-  const body = [
-    `**Name / handle:** ${name}`,
-    "",
-    `- 🏆 **Champion:** ${p.champion || "—"}`,
-    `- 🥈 **Runner-up:** ${p.runner_up || "—"}`,
-    `- 🥉 **Third place:** ${p.third_place || "—"}`,
-    `- 👟 **Golden Boot:** ${p.golden_boot || "—"}`,
-    `- 🐴 **Dark horse:** ${p.dark_horse || "—"}`,
-    p.rationale ? `\n> ${p.rationale}` : "",
-    "",
-    "<!-- Do not edit below: paste your full prediction JSON here. -->",
-    "```json",
-    "PASTE_JSON_HERE",
-    "```",
-  ].join("\n");
-
-  const params = new URLSearchParams({
-    title: `Prediction: ${name}`,
-    body,
-    labels: "prediction",
-  });
-  return `https://github.com/${GITHUB_REPO}/issues/new?${params.toString()}`;
-}
-
-async function submitToLeaderboard() {
+function submitToLeaderboard() {
   if (GITHUB_REPO === "OWNER/REPO") {
     alert("Leaderboard submission isn't configured yet — set GITHUB_REPO in predict.js to your repo.");
     return;
@@ -319,27 +290,25 @@ async function submitToLeaderboard() {
   if (incomplete && !confirm(`${incomplete} match(es) have no winner yet. Submit anyway?`)) return;
 
   const record = buildRecord();
-  const json = JSON.stringify(record, null, 2);
+  const p = record.prediction;
+  const body = [
+    `**Name / handle:** ${name}`,
+    "",
+    `- 🏆 **Champion:** ${p.champion || "—"}`,
+    `- 🥈 **Runner-up:** ${p.runner_up || "—"}`,
+    `- 🥉 **Third place:** ${p.third_place || "—"}`,
+    `- 👟 **Golden Boot:** ${p.golden_boot || "—"}`,
+    `- 🐴 **Dark horse:** ${p.dark_horse || "—"}`,
+    p.rationale ? `\n> ${p.rationale}` : "",
+    "",
+    "<!-- prediction data — do not edit below this line -->",
+    "```json",
+    JSON.stringify(record, null, 2),
+    "```",
+  ].join("\n");
 
-  // Copy full JSON to clipboard so the user can paste it into the issue body.
-  try {
-    await navigator.clipboard.writeText(json);
-  } catch {
-    // Clipboard blocked — fall back to a prompt the user can manually copy from.
-    prompt("Copy your full prediction JSON, then paste it into the issue body:", json);
-    return;
-  }
-
-  const url = buildIssueUrl(name, record);
-  window.open(url, "_blank", "noopener");
-
-  // Brief delay so the tab opens before the alert steals focus.
-  setTimeout(() => {
-    alert(
-      "Your full prediction JSON has been copied to the clipboard.\n\n" +
-      "In the GitHub issue that just opened, replace PASTE_JSON_HERE with Cmd+V (or Ctrl+V), then click Submit."
-    );
-  }, 300);
+  const params = new URLSearchParams({ title: `Prediction: ${name}`, body, labels: "prediction" });
+  window.open(`https://github.com/${GITHUB_REPO}/issues/new?${params.toString()}`, "_blank", "noopener");
 }
 
 function downloadJSON(entry) {
